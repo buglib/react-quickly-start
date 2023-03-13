@@ -10,12 +10,13 @@
         <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
         <script src="./statics/js/babel_6.26.0.min.js"></script>
         <script type="text/babel">
-            function FunctionComponent() {
-                console.log(this)
-                return <h1>这是一个函数式的组件</h1>
+            class ClassComponent extends React.Component {
+                render() {
+                    return <h1>Hello React!</h1>
+                }
             }
 
-            ReactDOM.render(<FunctionComponent/>, document.getElementById("rdom"))
+            ReactDOM.render(<ClassComponent/>, document.getElementById("rdom"))
         </script>
     </body>
 </html>
